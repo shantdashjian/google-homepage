@@ -2,14 +2,63 @@
 <html>
 	<head>
 		<title>Google</title>
-		<!--<link rel="stylesheet" type="text/css" href="styles/reset.css">-->
+		<link rel="stylesheet" type="text/css" href="styles/reset.css">
 		<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 	</head>
 	<body>
+		<div id="navbar">
+			<ul>
+				<li>
+					Shaun
+				</li>
+				<li>
+					<a href="http://gmail.com">Gmail</a>
+				</li>
+				<li>
+					<a href="http://images.google.com">Images</a>
+				</li>
+				<li>
+					<a href="http://apps.google.com"><img src="images/app-launcher.png"></a>
+				</li>
+				<li>
+					<a href="http://notifications.google.com"><img src="images/app-notifications.png"></a>
+				</li>
+			</ul>
+		</div>
+
 		<img id="logo" src="images/googlelogo.png" alt="Google logo" width="291" height="97">
-		<form name="search" action="search.rb" method="get">
-			<input type="text" name="search_words" size="30" autofocus><br>
+		<form name="f" action="http://www.google.com" method="get" onsubmit="return q.value!=''">
+			<input type="text" name="q" size="30" autofocus>
+			<br>
 			<input type="submit" name="submit" value="Google Search" size="30">
 		</form>
+		<div id="footer">
+			<span id="footer-left">
+				<ul>
+					<li>
+						<a href="http://advertising.google.com">Advertising</a>
+					</li>
+					<li>
+						<a href="http://business.google.com">Business</a>
+					</li>
+					<li>
+						<a href="http://about.google.com">About</a>
+					</li>
+				</ul>
+			</span>
+			<span id="footer-right">
+				<ul>
+					<li>
+						<a href="http://privacy.google.com">Privacy</a>
+					</li>
+					<li>
+						<a href="http://terms.google.com">Terms</a>
+					</li>
+					<li>
+						<a href="http://settings.google.com">Settings</a>
+					</li>
+				</ul>
+			</span>
+		</div>
 	</body>
 </html>
